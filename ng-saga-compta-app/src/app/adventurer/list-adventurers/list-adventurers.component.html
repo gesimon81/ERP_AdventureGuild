@@ -1,0 +1,20 @@
+<div class="center">List adventurers test</div>
+<div class="card-panel teal lighten-2">This is a card panel with a teal lighten-2 class</div>
+<div class="container">
+    <div class="row">
+        <div *ngFor="let adventurer of adventurersList" class="col m4 s6" >
+            <div class="card horizontal">
+                <div class="card-image">
+                    <img [src]="adventurer.picture" />
+                </div>
+                <div class="card-stacked">
+                    <div class="card-content">
+                        <p>{{ adventurer.name }}</p>
+                        <p><small>{{ adventurer.created }}</small></p>  
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+</div>

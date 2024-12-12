@@ -5,5 +5,6 @@ export interface Adventurer {
     hp: number;
     level: number;
     name: string;
+    picture: string;
     created: Date;
 }
